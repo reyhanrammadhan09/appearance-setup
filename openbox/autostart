@@ -4,13 +4,10 @@
 # to run user-specific things.
 #
 
-kitty &
-
-
 # If you want to use GNOME config tools...
 #
-#if test -x /usr/lib/openbox/gnome-settings-daemon >/dev/null; then
-#  /usr/lib/openbox/gnome-settings-daemon &
+#if test -x /usr/lib/x86_64-linux-gnu/gnome-settings-daemon >/dev/null; then
+#  /usr/lib/x86_64-linux-gnu/gnome-settings-daemon &
 #elif which gnome-settings-daemon >/dev/null 2>&1; then
 #  gnome-settings-daemon &
 #fi
@@ -18,3 +15,5 @@ kitty &
 # If you want to use XFCE config tools...
 #
 #xfce-mcs-manager &
+
+kitty &
