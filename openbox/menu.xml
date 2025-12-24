@@ -13,7 +13,15 @@
   </item>
   <item label="InteleJIDE">
     <action name="Execute">
-	    <command>/opt/idea.IC/bin/idea</command>
+      <command>/opt/idea-IC/bin/idea</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="RustRover">
+    <action name="Execute">
+      <command>/opt/RustRover/bin/rustrover</command> 
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
@@ -21,10 +29,17 @@
   </item>
   <item label="Visual Studio">
     <action name="Execute">
-      <command>/opt/VSCode-linux-x64/bin/code</command>
+      <command>code</command>
       <startupnotify>
         <enabled>yes</enabled>
       </startupnotify>
+    </action>
+  </item>
+</menu>
+<menu id="apps-database-client-menu" label="Database Client">
+  <item label="DataGrip">
+    <action name="Execute">
+      <command>/opt/DataGrip/bin/datagrip</command>
     </action>
   </item>
 </menu>
@@ -122,16 +137,16 @@
       <command>chromium</command>
       <startupnotify>
         <enabled>yes</enabled>
-        <wmclass>Firefox</wmclass>
+        <wmclass>Chromium</wmclass>
       </startupnotify>
     </action>
   </item>
-  <item label="Opera">
+  <item label="Chrome">
     <action name="Execute">
-      <command>opera</command>
+      <command>google-chrome</command>
       <startupnotify>
         <enabled>yes</enabled>
-        <wmclass>Opera</wmclass>
+        <wmclass>Chrome</wmclass>
       </startupnotify>
     </action>
   </item>
@@ -363,12 +378,11 @@
       <startupnotify><enabled>yes</enabled></startupnotify>
     </action>
   </item>
-  <item label="Manage Cups Printers">
+  <item label="Flameshoot">
     <action name="Execute">
-      <command>xdg-open http://localhost:631/</command>
+      <command>flameshot gui</command>
       <startupnotify>
         <enabled>no</enabled>
-        <icon>cups</icon>
       </startupnotify>
     </action>
   </item>
@@ -385,6 +399,7 @@
   <!-- <menu id="apps-graphics-menu"/> -->
   <menu id="apps-term-menu"/>
   <menu id="apps-git-client-menu"/>
+  <menu id="apps-database-client-menu"/>
   <menu id="apps-net-menu"/>
   <menu id="apps-office-menu"/>
   <menu id="apps-multimedia-menu"/>
